@@ -4,10 +4,74 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>CatPoker</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="flex flex-col justify-center items-center">
+      <h1 class='text-4xl font-bold tracking-tight py-5 shadow'>CatPoker</h1>
+      <button id='salir' class="bg-rose-500 font-bold uppercase text-xs py-1.5 px-6 rounded absolute top-5 right-5">salir</button>
+      <section id='table' class='relative h-96 w-[640px] border-2 border-orange-500'>
+
+        <div id='p1' class="absolute top-72 left-[30%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+          <div id='j1' class='flex'>
+            <span id='j1c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
+            <span id='j1c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+          </div>
+          <h3 class="leading-[1rem] text-xs uppercase font-medium">Busquet</h3>
+        </div>
+
+        <div id='p2' class="absolute top-[140px] left-[15%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+          <div id='j2' class='flex'>
+            <span id='j2c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
+            <span id='j2c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+          </div>
+          <h3 class="leading-[1rem] text-xs uppercase font-medium">Rodri</h3>
+        </div>
+
+        <div id='p3' class="absolute top-5 left-[38%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+          <div id='j3' class='flex'>
+            <span id='j3c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
+            <span id='j3c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+          </div>
+          <h3 class="leading-[1rem] text-xs uppercase font-medium">Casemiro</h3>
+        </div>
+
+        <div id='p4' class="absolute top-5 left-[62%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+          <div id='j4' class='flex'>
+            <span id='j4c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
+            <span id='j4c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+          </div>
+          <h3 class="leading-[1rem] text-xs uppercase font-medium">Gerard</h3>
+        </div>
+
+        <div id='p5' class="absolute top-[140px] left-[85%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+          <div id='j5' class='flex'>
+            <span id='j5c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
+            <span id='j5c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+          </div>
+          <h3 class="leading-[1rem] text-xs uppercase font-medium">Pirlo</h3>
+        </div>
+
+        <div id='p6' class="absolute top-72 left-[70%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+          <div id='j6' class='flex'>
+            <span id='j6c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
+            <span id='j6c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+          </div>
+          <h3 class="leading-[1rem] text-xs uppercase font-medium">Kross</h3>
+        </div>
+
+        <div id='board' class="absolute top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%] flex">
+          <span id='flop1'></span>
+          <span id='flop2'></span>
+          <span id='flop3'></span>
+          <span id='turn'></span>
+          <span id='river'></span>
+        </div>
+        <!-- <div id='dealer' class="absolute bottom-12 left-1/2 translate-x-[-50%]">
+          <span id='tope'></span>
+        </div> -->
+      </section>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
