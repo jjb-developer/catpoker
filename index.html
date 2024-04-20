@@ -10,62 +10,76 @@
     <div class="flex flex-col justify-center items-center">
       <h1 class='text-4xl font-bold tracking-tight py-5 shadow'>CatPoker</h1>
       <button id='salir' class="bg-rose-500 font-bold uppercase text-xs py-1.5 px-6 rounded absolute top-5 right-5">salir</button>
-      <section id='table' class='relative h-96 w-[640px] border-2 border-orange-500'>
+      <section id='table' class='relative h-[410px] w-[640px] border-2 border-orange-500'>
 
-        <div id='p1' class="absolute top-72 left-[30%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+        <div id='p1' class="absolute top-72 left-[30%] -translate-x-1/2 border-[3px] bg-zinc-50 rounded-lg w-32 h-24 duration-300 cursor-pointer flex flex-col items-center justify-center p-1">    
           <div id='j1' class='flex'>
-            <span id='j1c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
-            <span id='j1c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+            <span id='j1c1' class='block text-[2rem] translate-x-[4px] font-light'></span>
+            <span id='j1c2' class='block text-[2rem] translate-x-[-4px] font-light'></span>
           </div>
-          <h3 class="leading-[1rem] text-xs uppercase font-medium">Busquet</h3>
+          <h3 id='name_p1' class="leading-[1rem] text-xs uppercase font-medium"></h3>
+          <p id='coins_p1' class='text-sm font-medium leading-[1rem]'></p>
+          <p class='text-[0.65rem] font-bold leading-[1rem] tracking-tighter uppercase'>
+            <span id='salir_p1' class="hidden rounded bg-sky-500 text-sky-900 px-1.5 py-0.5">salir</span>
+            <span id='jugar_p1' class="hidden rounded bg-green-500 text-green-900 px-1.5 py-0.5">jugar</span>
+            <span id='ausentar_p1' class="hidden rounded bg-green-500 text-green-900 px-1.5 py-0.5">ausentar</span>
+            <span id='seat_p1' class="rounded bg-green-500 text-green-900 px-1.5 py-0.5">seat</span>
+          </p>
         </div>
 
-        <div id='p2' class="absolute top-[140px] left-[15%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+        <div id='p2' class="absolute top-[140px] left-[15%] -translate-x-1/2 border-[3px] bg-zinc-50 rounded-lg w-32 h-24 duration-300 cursor-pointer flex flex-col items-center justify-center">
           <div id='j2' class='flex'>
-            <span id='j2c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
-            <span id='j2c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+            <span id='j2c1' class='block text-[2rem] translate-x-[4px] font-light'></span>
+            <span id='j2c2' class='block text-[2rem] translate-x-[-4px] font-light'></span>
           </div>
           <h3 class="leading-[1rem] text-xs uppercase font-medium">Rodri</h3>
+          <p class='text-sm font-medium leading-[1rem]'>5000</p>
         </div>
 
-        <div id='p3' class="absolute top-5 left-[38%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+        <div id='p3' class="absolute top-5 left-[38%] -translate-x-1/2 border-[3px] bg-zinc-50 rounded-lg w-32 h-24 duration-300 cursor-pointer flex flex-col items-center justify-center">
           <div id='j3' class='flex'>
-            <span id='j3c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
-            <span id='j3c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+            <span id='j3c1' class='block text-[2rem] translate-x-[4px] font-light'></span>
+            <span id='j3c2' class='block text-[2rem] translate-x-[-4px] font-light'></span>
           </div>
           <h3 class="leading-[1rem] text-xs uppercase font-medium">Casemiro</h3>
+          <p class='text-sm font-medium leading-[1rem]'>5000</p>
         </div>
 
-        <div id='p4' class="absolute top-5 left-[62%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+        <div id='p4' class="absolute top-5 left-[62%] -translate-x-1/2 border-[3px] bg-zinc-50 rounded-lg w-32 h-24 duration-300 cursor-pointer flex flex-col items-center justify-center">
           <div id='j4' class='flex'>
-            <span id='j4c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
-            <span id='j4c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+            <span id='j4c1' class='block text-[2rem] translate-x-[4px] font-light'></span>
+            <span id='j4c2' class='block text-[2rem] translate-x-[-4px] font-light'></span>
           </div>
           <h3 class="leading-[1rem] text-xs uppercase font-medium">Gerard</h3>
+          <p class='text-sm font-medium leading-[1rem]'>5000</p>
         </div>
 
-        <div id='p5' class="absolute top-[140px] left-[85%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+        <div id='p5' class="absolute top-[140px] left-[85%] -translate-x-1/2 border-[3px] bg-zinc-50 rounded-lg w-32 h-24 duration-300 cursor-pointer flex flex-col items-center justify-center">
           <div id='j5' class='flex'>
-            <span id='j5c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
-            <span id='j5c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+            <span id='j5c1' class='block text-[2rem] translate-x-[4px] font-light'></span>
+            <span id='j5c2' class='block text-[2rem] translate-x-[-4px] font-light'></span>
           </div>
           <h3 class="leading-[1rem] text-xs uppercase font-medium">Pirlo</h3>
+          <p class='text-sm font-medium leading-[1rem]'>5000</p>
         </div>
 
-        <div id='p6' class="absolute top-72 left-[70%] -translate-x-1/2 border-2 rounded-lg w-24 h-20 hover:border-lime-500 duration-300 cursor-pointer flex flex-col items-center justify-center">
+        <div id='p6' class="absolute top-72 left-[70%] -translate-x-1/2 border-[3px] bg-zinc-50 rounded-lg w-32 h-24 duration-300 cursor-pointer flex flex-col items-center justify-center">
           <div id='j6' class='flex'>
-            <span id='j6c1' class='block text-[2rem] translate-x-[1px] font-light'></span>
-            <span id='j6c2' class='block text-[2rem] translate-x-[-1px] font-light'></span>
+            <span id='j6c1' class='block text-[2rem] translate-x-[4px] font-light'></span>
+            <span id='j6c2' class='block text-[2rem] translate-x-[-4px] font-light'></span>
           </div>
           <h3 class="leading-[1rem] text-xs uppercase font-medium">Kross</h3>
+          <p class='text-sm font-medium leading-[1rem]'>5000</p>
         </div>
 
+        <span id='cronometro' class='hidden absolute bottom-10 left-1/2 translate-x-[-50%] leading-[1rem] tracking-tighter text-[0.95rem] border-[3px] border-lime-500 rounded-full w-9 h-9 flex items-center justify-center'>15</span>
+
         <div id='board' class="absolute top-1/2 translate-y-[-50%] left-1/2 translate-x-[-50%] flex">
-          <span id='flop1'></span>
-          <span id='flop2'></span>
-          <span id='flop3'></span>
-          <span id='turn'></span>
-          <span id='river'></span>
+          <span id='flop1' class='text-[2rem]'></span>
+          <span id='flop2' class='text-[2rem]'></span>
+          <span id='flop3' class='text-[2rem]'></span>
+          <span id='turn' class='text-[2rem]'></span>
+          <span id='river' class='text-[2rem]'></span>
         </div>
         <!-- <div id='dealer' class="absolute bottom-12 left-1/2 translate-x-[-50%]">
           <span id='tope'></span>
